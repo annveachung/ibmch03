@@ -5,12 +5,11 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call,mail" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward,call,mail" />
 </head>
 
 <body>
-    
+    <a name="home" />
     <div id="bar">
 
         <div id="personalinformation">
@@ -50,7 +49,7 @@
     <div id="introduction">
         <img style="width:200px" src="images/profile.jpg" alt="Profile Picture">
 
-        <div>
+        <div id="introbody">
             <div id="greeting">
                 Hi, I'm Natalia Reyes!
             </div>
@@ -61,7 +60,7 @@
         </div>
     </div>
 
-    <div>
+    <section>
         <div class="headings">Skills</div>
         <div id="skills">
 
@@ -100,12 +99,47 @@
                 <div class="name">CSS</div>
                 <div class="exp">3 years experience</div>
             </div>
-
         </div>
-    </div>
+    </section>
 
+    <section>
+        <div class="headings">Projects</div>
+        <div class="projects">
+            <div class="project">
+                <div class="title">School Website</div>
+                <div class="workdescription">Created a website that provides updates about school curriculum.</div>
+            </div>
 
+            <div class="project">
+                <div class="title">Deepseek</div>
+                <div class="workdescription">Created an open-source AI which answers questions.</div>
+            </div>
 
+            <div class="project">
+                <div class="title">Winery App</div>
+                <div class="workdescription">Created an app that provides information about different types of wines.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="headings">Recommendations</div>
+        <div id="recommendations" class="recommendations">
+            <div class="recommendation">"An incredibly talented web designer and software engineer! Their ability to create visually stunning and highly functional websites is impressive. Always professional, detail-oriented, and delivers beyond expectations. Highly recommended!"</div>
+            <div class="recommendation">"A true problem-solver! They have an excellent grasp of both front-end and back-end technologies, making them a versatile asset to any team. Their designs are clean, modern, and user-friendly. Would love to work with them again!"</div>
+            <div class="recommendation">"Super responsive and easy to work with! They understand client needs and transform ideas into sleek, functional designs. Whether it's UI/UX, coding, or troubleshooting, they handle it all with expertise. A fantastic team player!"</div>
+        </div>
+
+        <div id="leaverecommendation">
+            <h2>Leave a Recommendation</h2>
+            <input type="text" id="name" placeholder="Name(optional)">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button onclick="submit()">Submit</button>
+        </div>
+
+    </section>
+
+    <a class="home" href="#home"><span class="material-symbols-outlined">arrow_upward</span></a>
 
 </body>
 
